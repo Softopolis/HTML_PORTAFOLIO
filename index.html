@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +8,7 @@
 </head>
 
 <body>
-
-    <!-- <div class="header">
-    <div class="profile">
-      <img src="./john.JPG" alt="Foto de perfil">
-      <div class="profile-name">John Mendoza</div>
-    </div>
-
-    <div class="nav-links">
-      <a href="#">ראשי</a>
-      <a href="#">אודות</a>
-      <a href="#">שירותים</a>
-      <a href="#">צור קשר</a>
-    </div>
-  </div> -->
-    <header>
-        
-
+    
        
          <nav >  <!-- class="nav-menu" -->
             <label class="menu-toggle" for="menuToggle">&#x2630</label>
@@ -98,40 +82,43 @@
                 
             </div>
         </div>
-          
-            <div style="padding-top: 0px;text-align: center;background-color: whitesmoke;">
-              <h2>John</h2>
+            
+            <div class="about" style="padding-top: 0px;text-align: center;background-color: whitesmoke;">
+              <h1>John</h1>
                <p>
               Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. Maiores vitae, quo magni exercitationem, similique omnis nemo corporis consequuntur libero doloremque soluta quibusdam<br> quis nobis earum unde impedit nam, consequatur aspernatur!               
               </p>
                <br>
                
-                 <a id="button" href="./cv_John.pdf" > download my CV</a>
+                 <a href="./cv_John.pdf" > download my CV</a>
                
                
            </div>
            
-           <form action="" class="form">
-                <div class="form-input">
-                    <label for="">Name: </label>
-                    <input type="text"  required>
-                </div>
-                <br>
-                
-                <div class="form-input">
-                    <label for="">Last Name: </label>
-                    <input type="text"  required>
-                </div>
+           <h1>HTML form</h1>
+    <hr>
+    <form action="" class="form">
+        <label for="">first name:</label><br>
+        <input type="text" placeholder="write your name"><br>
+        <label for="">Last name:</label><br>
+        <input type="text" placeholder="write your last name"><br>
+        <label for="">Telephone:</label><br>
+        <input type="tel" placeholder="write your telephone number"><br>
 
+        <label for="">Email:</label><br>        
+        <input type="email" placeholder="write your email"><br>
 
-                <br>
-                <br>
-                <input type="submit" value="send"/>
-
-           </form>
+        <label for="">age</label><br>
+        <input type="number" min="0" max="150" name="" id="" size="300" placeholder="age"><br> 
+        
+        <label for="">password: </label><br>
+        <input type="password" name="" id="" placeholder="password"><br>
+        <!-- TEXTAREA TAG -->
+        <label for="">Write your message: (TEXTAREA)</label><br>
+        <textarea name=""  id="" rows="8" cols="40"></textarea>
             
 
-
+     </form>
           <!-- </div> -->
     
 </body>

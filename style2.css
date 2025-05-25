@@ -13,17 +13,41 @@ nav{
     display: block;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    /* height: 100px; */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px; 
+  background-color: white; 
 }
-ul{
-    display: flex;
-    list-style-type: none;
-    gap: 30px;
+
+/* Lista de navegación */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Enlaces de navegación */
+nav ul li a.nav-link {
+  text-decoration: none;
+  color: black;
+  font-family: 'Heebo', sans-serif;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Hover en enlaces */
+nav ul li a.nav-link:hover {
+  color: #00bcd4;
+}
+
+/* Enlace principal (ראשי) en color celeste */
+nav ul li a.main-link {
+  color: #00bcd4;
+  font-weight: bold;
 }
 
 .logo{
@@ -31,6 +55,15 @@ ul{
     align-items: center;
     gap: 10px;
     
+  
+}
+.name-logo {
+top: 25px;
+left: 379px;
+width: 10px;
+height: 10px;
+
+
 }
 
 .logo>img{
@@ -90,40 +123,27 @@ a{
 
      }
 }
-.about{
-    
-  text-align: center;
-  padding: 50px 150px;
-  background-color: aqua;
-    /* height: auto;
-    width: auto;
-    background-color: aqua;
-    align-items: center;
-    text-align: center;
-    top:100px;
-    align-content: center;  
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-bottom: 50px;
-    padding-right: 50px; */
 
+
+/*    TEMPORAL   ---------------------------------------*/
+.temp>button{
+  border-radius: 30px;
+   background-color: white;
+   border: 1px solid rgb(0,195,255);
+   padding: 5px;
 }
-.about>h1{
-  margin-bottom: 30px;
-}
+/*    TEMPORAL   ---------------------------------------*/
 
 #skills{
     /* To contains images */
     display: flex;
-    justify-content: space-around;
+    gap: 21px;
+    align-items: center;
+    justify-content: center;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    padding: 3px;
-    /* display:flex;
-    align-items: center;
-    align-content: center;
-    padding-right: 50px;
-    display:inline-flex; */
+    padding: 20px 0;
+   
 }
 #skills>img{
   width:50px;
@@ -131,11 +151,12 @@ a{
 
 }
 .form{
-  padding: 30px;
+  /* padding: 30px; */
   background-color: black;
-  color: white;
+  padding-LEFT: 50PX;
+  /* color: white;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 .form-input{
   display: flex;
@@ -146,6 +167,39 @@ a{
   border: none;
   border-bottom: 2px solid rgb(0,179,255);
   
+}
+.about{
+  text-align: center;
+  padding: 50px 150px;
+  background-image: url('/public/assets/images/Turquoise\ Wavy\ Patterns.png');
+}
+.about>h1{
+  margin-bottom: 30px;
+  font-family: 'Heebo', sans-serif;
+  font-size: 55px;
+  font-weight: 700; 
+  margin: 0 auto;
+  padding: 0;
+  top: 80px;
+  left: 0px;
+  width: 1920px;
+  height: 100px;
+  
+}
+.about-text {
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500; 
+    font-size: 20px; 
+}
+
+.about> a{
+   border-radius: 30px;
+   background-color: white;
+   border: 1px solid rgb(0,195,255);
+   padding: 5px;
+   text-decoration: none;
+   
 }
 
 #c1{
@@ -164,53 +218,67 @@ a{
             border-radius:80px;
             
         }
-/*#icons{
-    height: 40px;
-    width: 40px;
-} */
+  .project-link {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #2C2C2C;
+    text-decoration: none;
+    opacity: 1;
+    background-color: #1AE0EC;
+    border-radius: 15px;
+    padding: 0 15px;
+    min-width: 153px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.screenshot-section {
+  width: 1920px;
+  height: 1014px;
+  background: #EBFEFF no-repeat center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.screenshot-section img {
+  max-width: 90%;
+  height: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.site-footer {
+  background-color: black;
+  color: #00ffff; /* celeste */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #00ffff;
+  font-family: 'Heebo', sans-serif;
+  font-size: 14px;
+}
+.footer-left,
+.footer-right {
+  direction: rtl;
+}
 
 
 
-/* CHAT GPT DOWN */
-/* body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    } */
 
-    /* .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-top: 3px solid #00d8ef;
-      background-color: white;
-      padding: 10px 20px;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-    }
+    
 
-    .profile {
-      display: flex;
-      align-items: center;
-    }
 
-    .profile img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-left: 10px;
-    }
 
-    .profile-name {
-      font-family: 'Courier New', cursive;
-      font-size: 18px;
-    }
 
-    .nav-links a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-    }
 
-    .nav-links a.active {
-      color: #00d8ef;
-    } */
