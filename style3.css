@@ -1,0 +1,353 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1px;
+    
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    /* justify-items: left; */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+   display: flex;
+   align-items:center;
+   gap:10px;
+}
+
+.logo:hover{
+    background-color: #ccc;
+}
+
+.logo >img{ /* ok */
+    width:30px;
+    height:30px;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.canvas-1{
+ padding-top: 50px;
+    
+ text-align: center;
+ /* justify-content: center; */
+ height:300px;
+ width:  auto;
+ background-color:#13E8F163;
+ padding-left: 1px;
+ padding-right: 1px;
+ /* opacity: 1; */
+ /* padding: 50px 150px; */
+}
+.canvas-1 > p{
+    /* text-align: center;
+    justify-content: center; */
+    margin-top: 40px;
+    padding-left: 15px;
+    padding-right:15px;
+    margin-bottom: 30px;
+    
+    
+}
+
+#canvas_images{
+    
+     display:flex;
+     justify-content:space-around;
+    /*align-items: center; */
+      overflow:auto;
+    /* my own CSS*/
+    margin-bottom: 60px;
+    text-align:justify;
+    align-items: center;
+    padding: 0px;
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+#canvas_images>img{
+    height: 70px;
+    width:70px;
+    padding: 14px;
+}
+#canvas_images>h2{
+    background-color: aqua;
+    text-align: right;
+    padding: 50px;
+}
+.about{ /*profile*/
+    
+    top: 30px;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.about>p{
+     text-align: center;
+    justify-content: center;
+    padding-left: 150px;
+    padding-right:150px;
+
+}
+#btn_cv{
+    border-radius: 30;
+    left: 989px;
+    width: 260px;
+    height: 41px;
+/* UI Properties */
+border-color: #1AE0EC;
+  background-color:  #1AE0EC;
+    border-radius: 25px;
+    opacity: 1;
+    /* font-style: italic; */
+    /* font-size: 15px; */
+    font: normal normal bold 20px/30px Heebo;
+    color: #3A3A3A;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+
+@media (max-width:576px){
+    header > nav >ul{
+        /* display: none; */
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        width: 100vw;
+        background-color: #ccc;
+        transition: transform 400ms ease-in-out;
+        transform:  translateX(100%);
+        /*calc(20px +10px + 10px); It could erase doesnt affect nathing */
+        
+        
+        top:28px;        
+         padding: 10px;
+        /* height: 155px;*/       
+     }
+    .menu-toggle{
+        display: block;
+        
+     }
+    
+     
+     
+     
+     /* teacher way  #menuToggle:checked+ul */
+    #menuToggle:checked+nav>ul{
+    display: flex;
+    flex-direction: column;
+       
+       transform: translateX(0);   
+   }
+   /*my own code*/
+  /* .about,.canvas-1{
+    padding-top: 8px;
+    padding: 50px 30px;
+    padding-bottom: 30px;
+  }   */
+  .primary{
+    flex-direction: column;
+   
+    background-color: orange;
+  }
+  img{
+    left: 30px;
+    width: 100%;
+    height: 80px;
+  }
+  /* .form-section>form{
+    display: none;
+  } */
+  .form-section{
+    width: 100%;
+    padding-top: 0px;
+    justify-content: center;
+    text-align: center;
+    /* left:0px; */
+    background-color: red;/*#3A3A3A*/
+    padding-left: 0px;
+    
+  }
+  .form-section>form{
+    margin-top: 0px;
+    padding: auto;
+    direction: ltr;
+    left: 0%;
+    /* width: 500px; */
+  }
+
+  .form-section>form>.form-input>input{
+    width: 400px;
+  }
+  .form-section>form>.form-input>#message{
+    width: 400px;
+  }
+  .form-section>form>.form-input>label{
+    text-align: left;
+  }
+  #envelope{
+    max-width: 7px;
+   height: 3px;
+  }
+  /* .image-section{
+    background-color: blueviolet;
+  } */
+}
+ 
+/* CSS FOR THE FORM */
+ .primary{
+    display:flex;/*inline-flex */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:1rem;
+    padding: 1rem;
+    /* width: 100%; */
+    background-color: #3A3A3A;
+    
+    /* padding-left: 40px; */
+ }
+  form{
+    
+    margin-top: 70px;
+    background-color: #3A3A3A;
+    color: white;
+    left: 10px;
+    /* display: flex; */
+    /* background-image: url(./images/Rectangle\ 41.png); */
+    
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+  } 
+  .form-input{
+   display: flex; 
+   flex-direction: column;
+  }
+  .form-input > input[type="text"],input[type="email"],input[type="tel"],#message{
+    border: none;
+    border-bottom: 2px solid rgb(0, 162, 255);
+    width: 40vw;
+  }
+  #envelope{
+   /* flex:1; */
+   max-width: 50%; 
+   height: 300px;
+   /* width: 340px; */
+  }
+  
+   
+   /*  GALLERY  CSS*/
+   
+   h2 {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    p.description {
+      margin-bottom: 40px;
+      color: #666;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      /* gap: 130px; */
+      /* gap:150px; */
+      row-gap: 70px;
+      column-gap: 50px;
+      max-width: 1500px;
+      max-height: 1086px;
+      background-color: red;
+    }
+    
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      /*  */
+      height: 518px; 
+      width: 405px;
+    }
+
+    .card >img {
+        width: 405px;
+       height: 223px;
+      /* width: 100%;
+      max-height: 150px; */
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 15px 0 5px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .card button {
+      margin-top: auto;
+      background: #00d1b2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background: #00bfa5;
+    }
+
+    /* Card con gradiente especial */
+    .card.highlight {
+      background: linear-gradient(to top, #00d1b2, #4f8ef7);
+      color: white;
+    }
+
+    .card.highlight p,
+    .card.highlight h3 {
+      color: white;
+    }
+
+    .card.highlight button {
+      background: white;
+      color: #00bfa5;
+    }
+
+  /* #content-form-image{
+    text-align: left;
+    display: inline-block;
+    background-color:#3A3A3A;
+    left: 6px;
+    justify-content:space-around;
+  } */
+  /* #content-form-image>form>input[type="submit"]{
+    
+    display: flex;
+    background: #1AE0EC 0% 0% no-repeat padding-box;
+  } */

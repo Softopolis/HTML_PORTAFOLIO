@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>עבודות נבחרות</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      /* padding: 20px ; */
+      padding-top: 100px;
+      padding-right: 303px;
+      padding-left: 302px;
+      text-align: center;
+      top: 0px;
+      /* margin-top: 100px;
+      margin-right: 303px;*/
+      margin-left: 303px; 
+      margin-bottom: 175px;
+
+    }
+
+    h2 {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    p.description {
+      margin-bottom: 40px;
+      color: #666;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      /* gap: 130px; */
+      /* gap:150px; */
+      row-gap: 70px;
+      column-gap: 50px;
+      max-width: 1500px;
+      max-height: 1086px;
+      background-color: red;
+    }
+    
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      /*  */
+      height: 518px; 
+      width: 405px;
+    }
+
+    .card >img {
+        width: 405px;
+       height: 223px;
+      /* width: 100%;
+      max-height: 150px; */
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 15px 0 5px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .card button {
+      margin-top: auto;
+      background: #00d1b2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background: #00bfa5;
+    }
+
+    /* Card con gradiente especial */
+    .card.highlight {
+      background: linear-gradient(to top, #00d1b2, #4f8ef7);
+      color: white;
+    }
+
+    .card.highlight p,
+    .card.highlight h3 {
+      color: white;
+    }
+
+    .card.highlight button {
+      background: white;
+      color: #00bfa5;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>עבודות נבחרות</h2>
+  <p class="description">כאן תמצאו אוספים נבחרים של פרויקטים או קבצים לשיתוף</p>
+
+  <div class="gallery">
+    <div class="card">
+      <img src="./images/Rectangle 41.png" alt="תמונה">
+      <h3>שם הפרויקט</h3>
+      <p>מידע קצר על הפרויקט כדי לתאר אותו בקצרה</p>
+      <button>לצפייה בפרויקט</button>
+    </div>
+
+    <div class="card">
+      <img src="./images/Rectangle 41.png" alt="תמונה">
+      <h3>שם הפרויקט</h3>
+      <p>מידע קצר על הפרויקט כדי לתאר אותו בקצרה</p>
+      <button>לצפייה בפרויקט</button>
+    </div>
+
+    <div class="card highlight">
+      <h3>כאן עכשיו</h3>
+      <p>כרטיס מועדף עם עיצוב מודגש</p>
+      <button>לצפייה</button>
+    </div>
+
+    <!-- Puedes duplicar más tarjetas así -->
+    <div class="card">
+      <img src="./images/Rectangle 41.png" alt="תמונה">
+      <h3>שם הפרויקט</h3>
+      <p>מידע קצר על הפרויקט כדי לתאר אותו בקצרה</p>
+      <button>לצפייה בפרויקט</button>
+    </div>
+
+    <div class="card">
+      <img src="./images/Rectangle 41.png" alt="תמונה">
+      <h3>שם הפרויקט</h3>
+      <p>מידע קצר על הפרויקט כדי לתאר אותו בקצרה</p>
+      <button>לצפייה בפרויקט</button>
+    </div>
+
+    <div class="card">
+      <img src="./images/Rectangle 41.png" alt="תמונה">
+      <h3>שם הפרויקט</h3>
+      <p>מידע קצר על הפרויקט כדי לתאר אותו בקצרה</p>
+      <button>לצפייה בפרויקט</button>
+    </div>
+  </div>
+
+</body>
+</html>

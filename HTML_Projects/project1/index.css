@@ -2,35 +2,50 @@ body{
   background: transparent url('./images/Path\ 15.png') 0% 0% no-repeat padding-box;
   font-family: "Heebo", sans-serif;
   font-size: 1.2em;
+
+  /* width:1920px;
+  height: 1080px; */
 }
 
 
 
 form{
 background: #1a1a1ad4 0% 0% no-repeat padding-box;
-width: 450px;
+width: 430px;
 height: 450px;
-position:absolute;
+position:absolute; 
 top: 157px;
-left: 1056px;
-padding: 75px;
-color:#fff;
+ left: 1056px; 
+padding: 75px; 
+ color:#fff;
+ 
 }
 
 form > h1{
    font: normal normal 900 36px/53px Heebo;
+   letter-spacing: 0px;
    margin-bottom: 21px;
+   
+   text-align: left;
+   /* margin-bottom: 21px; */
+   
 }
 
-form>p{
+form > p{
+    
     font: normal normal normal 20px/29px Heebo;
+    /* margin-bottom: 44px; */
+    letter-spacing: 0px;
     margin-bottom: 44px;
-
+    
+    
 }
 
 form>div{
     font: normal normal bold 16px/24px Heebo;
-
+}
+form > div> label{
+  display: block;
 }
 form>div>input{
     border: 1px solid #D31C75;
@@ -41,7 +56,7 @@ form>div>input{
 }
 
 form > button{
-  margin-top: 18px;
+  margin-top: 1px;
   background: #D31C75 0% 0% no-repeat padding-box;   
   width: 166px;
   height: 50px; 
@@ -49,7 +64,7 @@ form > button{
   letter-spacing: 0.33px;
   color: #FFFFFF;
   border:none;
-
+  direction: rtl;
 }
 @media(max-width:1700px){
     body{
